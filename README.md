@@ -55,7 +55,7 @@ In this project we deploy a Netflix clone application using a secure CI/CD pipel
 - Clone your application's code repository onto the EC2 instance:
     
     ```bash
-    git clone https://github.com/imsalmanmalik/DevSecOps-Project-Netflix-Deployment.git
+    git clone https://github.com/saakhani/DevSecOps-Project-Netflix-Deployment.git
     ```
 
 **Step 3: Install Docker and Run the App Using a Container:**
@@ -221,7 +221,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/imsalmanmalik/DevSecOps-Project-Netflix-Deployment.git'
+                git branch: 'main', url: 'https://github.com/saakhani/DevSecOps-Project-Netflix-Deployment.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -311,7 +311,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/imsalmanmalik/DevSecOps-Project-Netflix-Deployment.git'
+                git branch: 'main', url: 'https://github.com/saakhani/DevSecOps-Project-Netflix-Deployment.git'
             }
         }
         stage('Sonarqube Analysis') {
